@@ -1,0 +1,9 @@
+/^\s*Received:[^\n]*(.*)/                   IGNORE
+/^\s*User-Agent:/                           IGNORE
+/^\s*X-Enigmail:/                           IGNORE
+/^\s*X-Mailer:/                             IGNORE
+/^\s*X-Originating-IP:/                     IGNORE
+/^\s*X-Pgp-Agent:/                          IGNORE
+/^\s*X-PHP-Originating-Script:/             IGNORE
+/^\s*User-Agent:/                           IGNORE
+/^\s*(Mime-Version:\s*[0-9\.]+)\s.+/        REPLACE $1
