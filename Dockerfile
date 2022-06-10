@@ -24,7 +24,7 @@ RUN set -e \
     && postconf -e "smtp_header_checks = regexp:/etc/postfix/smtp_header_checks" \
     && postconf -e "smtp_sasl_auth_enable = yes" \
     && postconf -e "smtp_sasl_security_options = noanonymous" \
-    && postconf -e "smtp_sasl_password_maps = hash:/etc/postfix/sasl_passwd" \
+    && postconf -e "smtp_sasl_password_maps = lmdb:/etc/postfix/sasl_passwd" \
     && postconf -e "smtp_sasl_type = cyrus" \
     && postconf -e "smtp_sasl_tls_security_options = noanonymous" \
     && postconf -e "smtp_tls_security_level = encrypt" \
