@@ -1,4 +1,4 @@
-FROM alpine:3.12
+FROM alpine:3.16
 
 ENV RUNTIME_DEPS cyrus-sasl-login postfix postfix-pcre
 
