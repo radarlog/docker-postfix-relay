@@ -39,3 +39,4 @@ VOLUME ["/var/spool/postfix"]
 EXPOSE 25
 
 ENTRYPOINT ["entrypoint.sh"]
+CMD ["postfix", "start-fg"]

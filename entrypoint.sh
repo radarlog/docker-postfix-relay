@@ -10,4 +10,5 @@ chmod 600 $SASL_PASSWD_FILE
 postmap $SASL_PASSWD_FILE
 
 postfix check
-postfix start-fg
+
+exec $@
